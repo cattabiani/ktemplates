@@ -1,0 +1,49 @@
+folders:
+  - ${PROJECT_NAME}
+  - tests
+  - docs  # Optional for documentation
+files:
+  README.md: |
+    # ${PROJECT_NAME}
+
+    TODO: Add project description and usage instructions.
+  LICENSE: |
+    # TODO license
+  requirements.txt: |
+    pytest
+    # TODO: List your project dependencies here.
+  setup.py: |  # Optional for package distribution
+    from setuptools import setup, find_packages
+
+    setup(
+        name='${PROJECT_NAME}'
+        version='0.1.0',
+        packages=find_packages(),
+        install_requires=[
+            #TODO: add your dependencies here
+        ],
+    )
+  pyproject.toml: |  # Optional for modern Python projects
+    [build-system]
+    requires = ["setuptools", "wheel"]
+    build-backend = "setuptools.build_meta"
+  ${PROJECT_NAME}/__init__.py: ''
+  ${PROJECT_NAME}/main.py: |
+    def main():
+        print("Hello, World!")
+    
+    if __name__ == "__main__":
+        main()
+  tests/__init__.py: ''
+  tests/test_main.py: |  # Example test file
+    import pytest
+
+    def test_example():
+        assert True  # TODO: Replace with actual tests
+  .gitignore: |
+    __pycache__/
+    *.pyc
+    .vscode/
+    .env  # Ignore environment variable files if used
+    *.egg-info*
+    venv/

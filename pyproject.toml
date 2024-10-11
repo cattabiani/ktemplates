@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ktemplates"
+version = "0.1"
+description = "A Python project that creates templates based on a YAML configuration file."
+dependencies = ["PyYAML"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+ktemplates = "ktemplates:main"

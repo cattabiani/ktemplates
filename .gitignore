@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.vscode/
+.env  # Ignore environment variable files if used
+*.egg-info*
+venv/
