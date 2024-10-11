@@ -1,20 +1,20 @@
 from setuptools import setup
 
 setup(
-    name='ktemplates',
-    version='0.1',
-    py_modules=['ktemplates'],
+    name="ktemplates",
+    version="0.1",
+    py_modules=["ktemplates"],
     install_requires=[
-        'PyYAML',
+        "PyYAML",
     ],
     extras_require={
-        'dev': [
-            'pytest',
+        "dev": [
+            "pytest",
         ]
     },
     entry_points={
-        'console_scripts': [
-            'ktemplates=ktemplates:main',
+        "console_scripts": [
+            "ktemplates=ktemplates:main",
         ],
-    }
+    },
 )
